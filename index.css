@@ -1,0 +1,122 @@
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* video-container가 남은 공간을 채우도록 설정 */
+}
+
+video {
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*width: 100%;*/
+    height: 70vh;
+    object-fit: cover;
+}
+
+.stretch {
+    font-family: 'Stretch Pro', sans-serif;
+}
+
+.year{
+    font-size: 2rem;
+}
+
+.city{
+    font-size: 3.5rem;
+}
+
+.blue{
+    font-size: 3.4rem;
+}
+
+.core{
+    font-size: 3.2rem;
+}
+
+.type1 {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.type2 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    z-index: 3;
+    /*text-align: right;*/
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    /*align-items: flex-end; !* 오른쪽 정렬 *!*/
+}
+
+.type3{
+    position: absolute;
+    right: 10%;
+    top:48%;
+    z-index: 3;
+    display: flex;
+    background-color:transparent;
+}
+
+/* 기본 스타일 */
+.festival1, .festival2, .festival3, .festival4, .festival5, .festival6 {
+    position: relative;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem; /* 각 요소의 간격 유지 */
+    color: white;
+    cursor: pointer; /* 호버 시 마우스 커서 변경 */
+}
+
+/* 호버 시 텍스트 설정 */
+.festival1::after, .festival2::after, .festival3::after, .festival4::after, .festival5::after, .festival6::after {
+    content: attr(data-hover);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* 호버 시 기존 텍스트 숨기기 */
+.festival1:hover::before, .festival2:hover::before, .festival3:hover::before, .festival4:hover::before, .festival5:hover::before, .festival6:hover::before {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* 호버 시 새로운 텍스트 보이기 */
+.festival1:hover::after, .festival2:hover::after, .festival3:hover::after, .festival4:hover::after, .festival5:hover::after, .festival6:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 각각의 데이터 속성 설정 */
+.festival1::before { content: 'Busan Haeundae Light Festival'; }
+.festival1::after { content: '해운대 빛 축제'; }
+
+.festival2::before { content: 'Busan Lotus Lantern Festival'; }
+.festival2::after { content: '부산 연등 축제'; }
+
+.festival3::before { content: 'Busan Sea Festival'; }
+.festival3::after { content: '부산 바다 축제'; }
+
+.festival4::before { content: 'BU-ROCK Busan Rock Festival'; }
+.festival4::after { content: '부산 국제 록 페스티벌'; }
+
+.festival5::before { content: 'Busan International Film Festival, BIFF'; }
+.festival5::after { content: '부산 국제 영화제'; }
+
+.festival6::before { content: 'Busan International Fireworks Festival'; }
+.festival6::after { content: '부산 불꽃 축제'; }
+

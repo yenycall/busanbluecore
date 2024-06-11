@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.num{
+    font-weight: bold;
+    font-size: 3rem;
+    color:#00eaff;
+}
+
+.numtype{
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.numtype1{
+    display: flex;
+    margin-top: 30rem;
+    margin-bottom: 5rem;
+}
+
+.num1{
+    font-weight: bold;
+    font-size: 3rem;
+    color:#00eaff;
+    display: inline-block;
+}
+
+.title1{
+    /*font-weight: bold;*/
+    font-size: 3rem;
+}
+
+/* content1 컨테이너 설정 */
+.content1 {
+    display: flex; /* 플렉스 박스를 사용하여 자식 요소를 가로로 배치 */
+    justify-content: space-between; /* 자식 요소들 사이의 여백을 균등하게 */
+    align-items: center; /* 자식 요소를 세로 중앙 정렬 */
+    margin: 0 0 10rem 0; /* 좌우 여백을 동일하게 설정하여 가운데 배치 */
+    height: 100vh; /* 화면의 전체 높이를 차지하도록 설정 (필요시 조정) */
+}
+
+/* 각 con 요소들이 균등한 너비를 차지하도록 설정 */
+.con1, .con2, .con3 {
+    display: flex; /* 플렉스 박스를 사용 */
+    flex-direction: column; /* 자식 요소를 세로로 배치 */
+    align-items: center; /* 자식 요소를 가로 중앙 정렬 */
+    justify-content: center; /* 자식 요소를 세로 중앙 정렬 */
+    flex: 1; /* 각 요소가 동일한 비율로 공간을 차지 */
+    max-width:27% /* 각 요소의 최대 너비를 전체 너비에서 여백을 뺀 후 3으로 나눈 값으로 설정 */
+}
+
+/* circle 및 box의 스타일 정의 */
+.circle {
+    background-color: #ffffff; /* 예시 배경색 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    width: 4rem; /* 원의 너비 설정 */
+    height: 4rem; /* 원의 높이 설정 */
+    display: flex; /* 플렉스 박스를 사용 */
+    justify-content: center; /* 내용물 가로 중앙 정렬 */
+    align-items: center; /* 내용물 세로 중앙 정렬 */
+    color: #00eaff; /* 텍스트 색상 설정 */
+    font-weight: bold; /* 텍스트 굵게 */
+    font-size: 1.2rem; /* 텍스트 크기 설정 */
+    z-index: 2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.circle:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.box {
+    background-color: #ffffff; /* 예시 배경색 */
+    width: 23rem; /* 박스 너비 설정 */
+    height: 23rem; /* 박스 높이 설정 */
+    border-radius: 10%; /* 모서리를 둥글게 설정 */
+    margin-top: -2rem; /* 상단 여백 설정 */
+    display: flex;
+    flex-direction: column;
+}
+
+/*.boxp {*/
+/*    margin-top: 5rem;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.box p{
+    color: #000000;
+    z-index: 4;
+    padding:1rem 2rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.boximg {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;    /* 수직 가운데 정렬 */
+    height: 100%;          /* 부모 요소의 전체 높이 */
+    width: 100%;           /* 부모 요소의 전체 너비 */
+}
+
+
+.boximg img{
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top: 2rem;
+}
+
+.boxp {
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    width: 100%; /* 너비 설정 */
+    height: 100%; /* 높이 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    box-sizing: border-box; /* 패딩과 보더를 포함하여 크기 계산 */
+    padding: 20px; /* 내부 여백 */
+}
+
+.subtitle1{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.subtitle2{
+    font-size:1.3rem;
+    font-weight: bold;
+}
+
+.subcontent{
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*.content2{*/
+/*    justify-items: center;*/
+/*    width:40%;*/
+/*}*/
+
+.content2 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 80vh; /* 부모 요소를 화면 높이만큼 설정 */
+    padding: 0 10%; /* 양쪽에 10% 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+.content2 img {
+    max-width: 80%; /* 이미지가 부모 요소 너비를 넘지 않도록 설정 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.content3 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 80vh; /* 부모 요소를 화면 높이만큼 설정 */
+    padding: 0 10%; /* 양쪽에 10% 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    margin-bottom: 10rem;
+}
+
+.content3 img {
+    max-width: 100%; /* 이미지가 부모 요소 너비를 넘지 않도록 설정 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+/*.content5{*/
+/*    display: flex; !* Flexbox 사용 *!*/
+/*    justify-content: space-between; !* 가로 중앙 정렬 *!*/
+/*    align-items: center; !* 세로 중앙 정렬 *!*/
+/*    margin-bottom: 3rem;*/
+/*}*/
+
+/*.content5 img{*/
+/*    width:25%;*/
+/*}*/
+
+.face {
+    display: flex;
+    justify-content: space-between; /* 이미지 사이에 균등한 간격을 두고 정렬 */
+    align-items: center; /* 이미지가 수직으로 가운데 정렬 */
+}
+
+.face img {
+    flex: 3; /* 각 이미지가 동일한 너비를 차지 */
+    max-width: calc(25% - 2rem); /* 한 줄에 3장을 배치하고, 패딩과 간격을 고려 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.name {
+    display: flex;
+    justify-content: space-between; /* 이미지 사이에 균등한 간격을 두고 정렬 */
+    align-items: center; /* 이미지가 수직으로 가운데 정렬 */
+}
+
+.name p {
+    flex: 3; /* 각 이미지가 동일한 너비를 차지 */
+    max-width: calc(25% - 2rem); /* 한 줄에 3장을 배치하고, 패딩과 간격을 고려 */
+    height: auto; /* 이미지 비율 유지 */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.light{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.content4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.content4 img {
+    margin-top: 5rem;
+    width: 17%; /* 사진이 화면 너비의 25%를 차지하도록 설정 */
+}
+
+.content4-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.content4-1 p {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 17%;
+    text-align: center;
+}
+
+.content5{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.btn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5e5e5e;
+    background-color: white;
+    width: 12rem;
+    height: 3rem;
+    border:none;
+}
+
+.btn:hover{
+    color:#00eaff;
+    background-color: #5e5e5e;
+    cursor: pointer;
+}
+
+.modal{
+    width:100%;
+    height:auto;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    /*opacity: 60%;*/
+    text-align: center;
+    display: none;
+    line-height: 2rem;
+    justify-content: space-between; /* 이미지 사이에 균등한 간격을 두고 정렬 */
+    align-items: center; /* 이미지가 수직으로 가운데 정렬 */
+    margin-bottom: 10rem;
+}
+
+.modal.active{
+    display: flex;
+}
+
+
+
+.review {
+    flex: 3; /* 각 이미지가 동일한 너비를 차지 */
+    max-width: calc(33.33% - 3rem); /* 한 줄에 3장을 배치하고, 패딩과 간격을 고려 */
+    height: auto; /* 이미지 비율 유지 */
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.pcontent{
+    margin-bottom: 10rem;
+    line-height: 2rem;
+    font-size: 1.05rem;
+}
+
+/* 공통 컨테이너 스타일 */
+.container1 {
+    width: 100%;
+    max-width: 100%; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 4rem 0;
+    text-align: right;
+}
+
+/* 개별 섹션 스타일 */
+.p1, .p2, .p3, .p4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* 타이틀 스타일 */
+.title4 {
+    flex: 1; /* 가로 공간 1/3 차지 */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 콘텐츠 스타일 */
+.content4 {
+    margin-top: 0;
+    align-self: flex-start;
+    flex: 1; /* 가로 공간 1/3 차지 */
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+/* 이미지 스타일 */
+.container1 img {
+    flex: 1; /* 가로 공간 1/3 차지 */
+    max-width: 100%; /* 이미지를 공간 내에서 크기에 맞게 조절 */
+    height: auto; /* 원본 비율 유지 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .p1, .p2, .p3, .p4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title4, .content4, img {
+        flex: none; /* flex 속성 해제 */
+        width: 100%; /* 전체 너비 사용 */
+        text-align: center;
+    }
+}
+
+
+
+.openingmotion {
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+}
+
+.openingmotion h2 {
+    font-family: 'Stretch Pro', sans-serif;
+    color: #fff;
+    font-size: 6em;
+    position: absolute;
+}
+
+.openingmotion h2:nth-child(1) {
+    /*color: transparent;*/
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+.openingmotion h2:nth-child(2) {
+    color: #00c4ff;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+        );
+    }
+}

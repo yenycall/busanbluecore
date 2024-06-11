@@ -1,0 +1,273 @@
+.type1{
+    margin-bottom: 12rem;
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* 부모 div를 화면 가로 기준 중앙으로 배치 */
+.video {
+    background-color: white;
+    padding:2rem 0;
+    display: flex;          /* flexbox를 사용하여 중앙 정렬 */
+    justify-content: center;/* 수평 중앙 정렬 */
+    align-items: center;    /* 수직 중앙 정렬 (필요한 경우 사용) */
+    width: 100%;
+    margin-bottom: 15rem/* 부모 div의 너비를 100%로 설정 */
+}
+
+/* video 요소의 너비를 80%로 설정 */
+video.opening {
+    width: 60%;             /* 비디오 너비를 80%로 설정 */
+    max-width: 100%;        /* 비디오가 부모 요소의 너비를 넘지 않도록 제한 */
+    height: auto;           /* 비디오의 종횡비를 유지하면서 높이 자동 조정 */
+}
+
+
+.krtitle {
+    /*justify-content: flex-end; !* 가로 중앙 정렬 *!*/
+    /*align-items: center; !* 세로 중앙 정렬 *!*/
+    text-align: right;
+}
+
+.titleAnimation{
+    justify-content: flex-end; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-left: auto;
+    width: 100%; /* 이미지 컨테이너의 너비를 그리드 칸에 맞춥니다 */
+    height: 100%; /* 이미지 컨테이너의 높이를 그리드 칸에 맞춥니다 */
+}
+
+
+.fb{
+    font-size: 2.5rem;
+}
+
+.fb1{
+    font-size: 3.96rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.numtype{
+    display: flex;
+    margin: 5rem 0;
+}
+
+.num{
+    font-weight: bold;
+    font-size: 3rem;
+    color:#00eaff;
+}
+
+.title1{
+    font-size: 3rem;
+}
+
+.typecontent{
+    margin-bottom: 20rem;
+}
+
+.pcontent{
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+}
+
+.boldcolor{
+    font-weight: bold;
+    font-size: 2rem;
+    color:#00eaff;
+}
+
+.sec3{
+    display: flex;
+    justify-content: space-between; /* 이미지 사이에 균등한 간격을 두고 정렬 */
+    align-items: flex-start; /* 이미지가 수직으로 가운데 정렬 */
+    margin-bottom: 15rem;
+}
+
+.sec3-1,.sec3-2,.sec3-3 {
+    flex: 3; /* 각 이미지가 동일한 너비를 차지 */
+    max-width: calc(33.33% - 3rem); /* 한 줄에 3장을 배치하고, 패딩과 간격을 고려 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.subtitle{
+    font-weight: bold;
+    color: #00eaff;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.subcontent{
+    line-height: 1.6rem;
+}
+
+.whiteblock{
+    background-color: white;
+    margin-bottom: 5rem;
+    padding:5rem 0;
+    display: flex;
+}
+
+/* 전체 컨테이너의 스타일을 설정합니다 */
+.container1 {
+    width: 80%; /* 컨테이너의 너비를 80%로 설정합니다 */
+    margin: 0 auto; /* 양옆에 10%씩 여백을 줍니다 */
+    display: grid; /* 그리드 레이아웃을 사용합니다 */
+    grid-template-columns: 1fr 1fr; /* 가로로 두 칸으로 나눕니다 */
+    gap: 20px; /* 칸 사이에 여백을 줍니다 */
+}
+
+/* 각 이미지 컨테이너 스타일을 설정합니다 */
+.b1 {
+    display: flex; /* 플렉스박스를 사용하여 아이템을 중앙에 정렬합니다 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%; /* 이미지 컨테이너의 너비를 그리드 칸에 맞춥니다 */
+    height: 100%; /* 이미지 컨테이너의 높이를 그리드 칸에 맞춥니다 */
+}
+
+.b2 {
+    padding-top: 5rem;
+    padding-right:4rem;
+    display: flex; /* 플렉스박스를 사용하여 아이템을 중앙에 정렬합니다 */
+    justify-content: flex-end; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-left: auto;
+    width: 70%; /* 이미지 컨테이너의 너비를 그리드 칸에 맞춥니다 */
+    height: auto; /* 이미지 컨테이너의 높이를 그리드 칸에 맞춥니다 */
+}
+/*.b1 img, .b2 img {*/
+/*    max-width: 100%; !* 이미지의 최대 너비를 100%로 설정하여 칸 안에 들어가게 합니다 *!*/
+/*    max-height: 100%; !* 이미지의 최대 높이를 100%로 설정하여 칸 안에 들어가게 합니다 *!*/
+/*}*/
+
+
+.bgtitle{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bgcontent{
+    line-height: 2rem;
+    margin-bottom: 5rem;
+}
+
+.color{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#00eaff;
+}
+
+.bncontent{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 10rem;
+}
+
+.con2{
+    text-align: right;
+}
+
+.bntitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* .bnimg 요소의 텍스트 정렬을 통해 자식 요소인 이미지 중앙 정렬 */
+.bnimg {
+    text-align: center; /* 텍스트와 인라인 요소를 가로 중앙 정렬 */
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+/* 이미지에 대한 추가 스타일 */
+.dg {
+    display: inline-block; /* 이미지가 인라인 요소로 취급되도록 설정 */
+    max-width: 100%; /* 이미지가 부모 요소의 최대 너비를 넘지 않도록 설정 */
+    height: auto; /* 이미지의 비율을 유지하면서 크기를 조정 */
+}
+
+
+.bold{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#00eaff;
+}
+
+.bntype{
+    margin-bottom: 3rem;
+    line-height: 1.3rem;
+}
+
+.bftype{
+    margin-top: 5rem;
+    font-size: 1.05rem;
+    margin-bottom: 15rem;
+    line-height: 2rem;
+}
+
+.bfcontent{
+    margin-top: 5rem;
+}
+
+.animation {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; /* 무한 반복 */
+    animation-fill-mode: forwards; /* 애니메이션이 끝난 후 마지막 상태를 유지 */
+    font-family: 'Stretch Pro', sans-serif;
+    font-size: 5rem;
+}
+
+.animation:nth-child(1) {
+    font-size: 3rem;
+}
+
+.animation:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.animation:last-child {
+    color: #0500ff;
+    animation-delay: 0.5s;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
+    }
+}

@@ -1,0 +1,98 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url('https://fonts.cdnfonts.com/css/stretch-pro');
+
+* {
+    font-family: 'pretendard', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* html과 body에 전체 높이 설정 */
+    background-color: #000000;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* body를 flex 컨테이너로 설정 */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* 컨테이너가 남은 공간을 채우도록 설정 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    margin-top: 2.3%;
+    margin-bottom: 8%;
+}
+
+.mainlogo{
+    width: 90%;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .logo img {
+    display: block;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #00eaff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem; /* 위 요소들과의 간격 설정 */
+}
+
+footer .icons {
+    display: flex;
+}
+
+.icon {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.f1 {
+    font-weight: bold;
+}
+
+.f2 {
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 0.25rem;
+}
+
+.logofooter{
+    font-size: 0.9rem;
+}
+
+footer .logofooter, .designer, .programmer {
+    display: flex;
+    margin-top: 1.5%;
+}
